@@ -1,0 +1,7 @@
+// Global theme import
+@import '@carbon/themes/scss/themes';
+@import './styles/theme';
+@include carbon--theme($theme);
+
+// Apply the styles
+@import 'carbon-components/scss/globals/scss/styles.scss';
