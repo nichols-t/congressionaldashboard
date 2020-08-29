@@ -1,6 +1,7 @@
 import React from 'react';
 import useMembers from '../data/useMembers';
 import SimpleTable from './SimpleTable';
+import { InlineNotification } from 'carbon-components-react';
 
 /**
  *  DATA FORMAT:
@@ -78,7 +79,7 @@ const MembersTable = ({ congress, chamber }) => {
 
   if (error) {
     // TODO: There should be a nicer way to display error state.
-    return <p>Error Loading Members Data</p>;
+    return <InlineNotification kind="error">Error Loading Members Data</InlineNotification>;
   }
 
   return loading ? <p>Data is loading</p>

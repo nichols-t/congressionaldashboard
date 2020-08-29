@@ -7,7 +7,6 @@ import requestPublicaApi from './publicaApi';
  * @return {Array} of members from the response.
  */
 const transform = (response) => {
-  console.dir(response);
   if (response?.data?.results?.[0]?.members) {
     return response.data.results[0].members;
   }
